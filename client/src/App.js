@@ -1,7 +1,7 @@
+import StockForm from "./components/StockForm";
+
 function App() {
-	return (
-		<h1>Hello world</h1>
-	);
+  return <StockForm />;
 }
 
 export default App;
