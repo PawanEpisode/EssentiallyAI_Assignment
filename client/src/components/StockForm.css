@@ -1,0 +1,155 @@
+.stockForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 9px 9px 10px #c295cf, -9px -9px 25px #ffdbff;
+}
+
+.labelText {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkmagenta;
+}
+
+input {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 190px;
+  height: 30px;
+  border: 2px solid darkmagenta;
+  border-radius: 5px;
+}
+
+input:focus {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  outline-color: rgb(255, 0, 170);
+  box-shadow: 0px 0px 25px rgb(255, 0, 170);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stockSymbolWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.particularDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tradeBtn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  border: 2px solid rgb(245, 5, 165);
+  border-radius: 34px;
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.tradeBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(188, 44, 154);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tradeBtn:hover::before {
+  scale: 3;
+}
+
+.tradeBtn:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgb(188, 44, 154);
+}
+
+.tradeBtn:active {
+  scale: 1;
+}
+
+.heading-title {
+  position: absolute;
+  top: 5px;
+  color: darkmagenta;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.small-desc {
+  position: absolute;
+  top: 85px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: black;
+}
+
+.heading {
+  max-width: 400px;
+  height: 110px;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f79cdd, #f3c82d);
+}
+
+.heading:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(135deg, #f50656, #b7fcce);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.heading:hover:before {
+  transform: scale(28);
+}
+
+.heading:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+.heading:hover .heading-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
