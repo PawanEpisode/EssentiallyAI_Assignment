@@ -50,14 +50,16 @@ app.post("/api/fetchStockData", async (req, res) => {
 
     // Extract the relevant data from the response (assuming the data you need is in polygonApiResponse.data)
     const responseData = {
+      status: polygonApiResponse?.status,
       message: `Received data: ${JSON.stringify(requestData)}`,
-      polygonData: polygonApiResponse.data, // Include the Polygon API data in the response
+      polygonData: polygonApiResponse?.data, // Include the Polygon API data in the response
     };
     // Respond back to the client
     res.json(responseData);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).json({ error: "Internal server error" });
+    console.log("Error:", error);
+    res.json(error)
+    // res.status(500).json({ error: "Internal server error" });
   }
 });
 

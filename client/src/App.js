@@ -1,7 +1,12 @@
 import StockForm from "./components/StockForm";
+import "./App.css";
 
 function App() {
-  return <StockForm />;
+  return (
+    <div className="App">
+      <StockForm />
+    </div>
+  );
 }
 
 export default App;
