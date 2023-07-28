@@ -35,11 +35,14 @@ The task is to build a webpage to display the trade statistics (Open, High, Low,
 
 ## Optional tasks
 **Imagine this is a real world scenario which thousands of users use to get the historic data of a stock for a particular day, how would this product change in order to improve the UX.**
+
+***
+
 *I have not Implemented at this point of time, will implement as building a project.*
 *But following points can be considered :-*
 
 1. **Scalability and Performance:**
-*Optimize the backend infrastructure to handle a high volume of concurrent requests efficiently. Consider using load balancers and caching mechanisms to improve response times.
+* Optimize the backend infrastructure to handle a high volume of concurrent requests efficiently. Consider using load balancers and caching mechanisms to improve response times.
 * Implement server-side and client-side caching to reduce the load on the server and improve data retrieval speeds for frequently accessed stock data.
 
 2. **Responsive Design:**
@@ -51,7 +54,7 @@ The task is to build a webpage to display the trade statistics (Open, High, Low,
 * Allow users to create accounts and save their preferences, such as favorite stocks or default date ranges, for quick access to the desired information.
 
 4. **Real-time Updates:**
-*Implement real-time updates to provide users with the most recent stock data without manual refreshing. Consider integrating WebSocket or server-sent events to push updates to users as they happen.
+* Implement real-time updates to provide users with the most recent stock data without manual refreshing. Consider integrating WebSocket or server-sent events to push updates to users as they happen.
 
 5. **Data Visualization:**
 * Enhance the data visualization by providing interactive charts and graphs, allowing users to explore and analyze historic stock data visually.
@@ -64,6 +67,9 @@ The task is to build a webpage to display the trade statistics (Open, High, Low,
 ***
 
 **What new features would you add in this product to increase it's utility for the end user.**
+
+***
+
 *New Features that can be added in this product to increase the utility for end user :-*
 
 1. **Historical Data Range Selection:**
